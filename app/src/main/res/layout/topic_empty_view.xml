@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background"
+    android:visibility="gone">
+
+    <ImageView
+        android:id="@+id/iv_empty_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60.0dip"
+        android:src="@drawable/empty_bcy"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_desc_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_empty_pic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45.0dip"
+        android:text="@string/focus_group_empty"
+        android:textColor="@color/grey_ten_level"
+        android:textSize="14.0sp" />
+
+    <TextView
+        android:id="@+id/tv_desc_two"
+        android:layout_width="136.0dip"
+        android:layout_height="32.0dip"
+        android:layout_below="@id/tv_desc_one"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22.0dip"
+        android:background="@drawable/shape_solid_pink_radius_14"
+        android:gravity="center"
+        android:text="@string/go_to_discover"
+        android:textColor="@color/white"
+        android:textSize="14.0sp"
+        android:visibility="gone" />
+</RelativeLayout>

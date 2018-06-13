@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tagview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/background" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="12.0dip"
+        android:paddingRight="12.0dip"
+        android:paddingTop="12.0dip">
+
+        <TextView
+            android:id="@+id/seen_label"
+            style="@style/font_16_333333"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hava_seen"
+            android:textStyle="bold" />
+
+        <com.xh.study.bcy.widget.TagView
+            android:id="@+id/seen_tags"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16.0dip"
+            android:layout_marginTop="12.0dip"
+            tagview:t_border_background="@color/background"
+            tagview:t_horizontal_spacing="12.0dip"
+            tagview:t_line_color="@color/background"
+            tagview:t_text_color="@color/mine_textcolor"
+            tagview:t_text_size="14.0sp"
+            tagview:t_vertical_spacing="12.0dip" />
+    </LinearLayout>
+</LinearLayout>

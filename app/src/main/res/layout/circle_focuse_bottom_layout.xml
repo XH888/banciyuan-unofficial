@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="6.0dip"
+    android:layout_marginLeft="16.0dip"
+    android:layout_marginRight="16.0dip"
+    android:translationY="68.0dip">
+
+    <RelativeLayout
+        android:id="@+id/view_focuse_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="26.0dip"
+            android:layout_marginTop="32.0dip"
+            android:background="@drawable/button_pink_shadow" />
+
+        <LinearLayout
+            android:id="@+id/view_un_focues"
+            android:layout_width="fill_parent"
+            android:layout_height="52.0dip"
+            android:background="@drawable/shape_solid_pink_radius_4"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <TextView
+                style="@style/font_16_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/focused_circle" />
+
+            <TextView
+                style="@style/font_12_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="2.0dip"
+                android:text="@string/focus_to_refresh_timeline_data" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/view_focuesed"
+            android:layout_width="fill_parent"
+            android:layout_height="52.0dip"
+            android:background="@drawable/shape_solid_pink_radius_4"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="24.0dip"
+                android:layout_height="24.0dip"
+                android:layout_gravity="center"
+                android:layout_marginRight="8.0dip"
+                android:src="@drawable/done_white" />
+
+            <TextView
+                style="@style/font_16_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/focused" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/circle_post"
+        android:layout_width="64.0dip"
+        android:layout_height="64.0dip"
+        android:layout_above="@id/view_focuse_bottom"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="12.0dip"
+        android:scaleType="centerCrop"
+        android:src="@drawable/circle_float_button" />
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@+id/rl_header_top" layout="@layout/detail_head" />
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_needfans" android:paddingTop="110.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/rl_header_top">
+        <TextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/detail_need_fans_one" style="@style/font_12_666666" />
+        <TextView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tv_setfans" android:background="@drawable/shape_solid_pink_radius_16" android:layout_width="150.0dip" android:layout_height="32.0dip" android:layout_marginTop="32.0dip" android:text="@string/detail_need_fans_two" style="@style/font_14_alway_white" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/ll_needlogin" android:paddingTop="110.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/rl_header_top">
+        <TextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/detail_need_login_one" style="@style/font_12_666666" />
+        <TextView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tv_login" android:background="@drawable/shape_solid_pink_radius_16" android:layout_width="150.0dip" android:layout_height="32.0dip" android:layout_marginTop="32.0dip" android:text="@string/detail_login_two" style="@style/font_14_alway_white" />
+    </LinearLayout>
+    <include android:id="@+id/ll_detail_locked" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/rl_header_top" layout="@layout/lock_view" />
+</RelativeLayout>

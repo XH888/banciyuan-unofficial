@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/card_feed_header" />
+
+    <com.xh.study.bcy.widget.EllipsisTextView
+        android:id="@+id/feed_intro"
+        style="@style/font_15_333333"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12.0dip"
+        android:layout_marginLeft="12.0dip"
+        android:layout_marginRight="12.0dip"
+        android:ellipsize="end"
+        android:lineSpacingExtra="4.0dip"
+        android:maxLines="3" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12.0dip"
+        android:layout_marginRight="12.0dip"
+        android:background="@drawable/shape_solid_background_radius_4"
+        android:orientation="vertical"
+        android:padding="12.0dip">
+
+        <TextView
+            android:id="@+id/feed_body_title"
+            style="@style/font_16_333333"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="4.0dip"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/feed_summary"
+            style="@style/font_13_333333"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6.0dip"
+            android:lineSpacingExtra="4.0dip" />
+    </LinearLayout>
+
+    <com.xh.study.bcy.widget.TagView
+        android:id="@+id/feed_tags"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12.0dip"
+        android:paddingLeft="12.0dip"
+        android:paddingRight="12.0dip"
+        android:visibility="visible"
+        app:t_maxline="1" />
+
+    <include layout="@layout/card_feed_bottom" />
+
+    <com.xh.study.bcy.widget.Space
+        android:layout_width="fill_parent"
+        android:layout_height="8.0dip" />
+</LinearLayout>

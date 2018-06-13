@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/background" android:layout_width="fill_parent" android:layout_height="12.0dip" />
+    <View android:background="@color/block_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <RelativeLayout android:id="@+id/rl_footer" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <ImageView android:id="@+id/iv_tag" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginLeft="16.0dip" android:src="@drawable/topic_edit_gray" android:layout_centerVertical="true" />
+        <ImageView android:id="@+id/iv_go" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:src="@drawable/go_gray" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/my_like_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:text="@string/edittag" android:layout_toLeftOf="@id/iv_go" android:layout_toRightOf="@id/iv_tag" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/block_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

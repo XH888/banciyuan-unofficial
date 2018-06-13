@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@+id/rl_footer" android:layout_width="fill_parent" android:layout_height="120.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/pink" android:gravity="center" android:id="@+id/footer_goacg" android:background="@drawable/shape_solid_white_radius_18" android:layout_width="170.0dip" android:layout_height="35.0dip" android:layout_marginTop="20.0dip" android:text="@string/gohotacg" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

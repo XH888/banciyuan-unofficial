@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:id="@+id/type_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="4.0dip"
+        android:paddingTop="4.0dip">
+
+        <TextView
+            android:id="@+id/type_tv"
+            style="@style/font_12_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="6.0dip"
+            android:text="@string/single_line" />
+
+        <ImageView
+            android:id="@+id/type_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingBottom="8.0dip"
+            android:paddingTop="8.0dip"
+            android:src="@drawable/multi_type_blue" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/post_count"
+        style="@style/font_12_999999"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12.0dip"
+        android:paddingBottom="4.0dip"
+        android:paddingTop="4.0dip" />
+</RelativeLayout>

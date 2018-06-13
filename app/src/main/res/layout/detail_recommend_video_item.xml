@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="96.0dip" android:layout_height="96.0dip" android:layout_marginRight="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.makeramen.roundedimageview.RoundedImageView android:id="@+id/iv_daily_cover" android:layout_width="96.0dip" android:layout_height="96.0dip" android:scaleType="centerCrop" app:riv_corner_radius="3.0dip" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/video_play" android:layout_centerInParent="true" />
+    <TextView android:id="@+id/tv_video_time" android:background="@drawable/shape_solid_black35_radius_2" android:paddingLeft="4.0dip" android:paddingTop="2.0dip" android:paddingRight="4.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:layout_marginBottom="4.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/font_11_ffffff" />
+</RelativeLayout>

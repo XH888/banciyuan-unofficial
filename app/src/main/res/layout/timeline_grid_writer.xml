@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/write_item_one"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.theophrast.ui.widget.SquareImageView
+        android:id="@+id/item_shadow"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/group_content_back" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:id="@+id/item_title"
+            style="@style/font_15_333333"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginRight="8.0dip"
+            android:layout_marginTop="14.0dip"
+            android:ellipsize="end"
+            android:lineSpacingExtra="2.0dip"
+            android:maxLines="2"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/item_tag"
+            style="@style/font_11_999999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="14.0dip"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginRight="8.0dip"
+            android:ellipsize="end"
+            android:maxLines="1" />
+    </FrameLayout>
+</FrameLayout>

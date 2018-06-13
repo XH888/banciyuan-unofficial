@@ -1,0 +1,424 @@
+<resources>
+
+    <style name="AppTheme" parent="@style/Basic" />
+
+    <style name="splash" parent="@style/AppTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+
+    <style name="Basic" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/base_activity_animation</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:selectableItemBackground">@color/transparent</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/pink</item>
+
+        <item name="ubackground">@color/background</item>
+        <item name="nameColor">@color/mine_textcolor</item>
+        <item name="cardBackGround">@color/white</item>
+        <item name="blockLine">@color/block_line</item>
+        <item name="cardInner">@color/content_background</item>
+        <item name="contentTextColorDark">@color/mine_textcolor</item>
+        <item name="contentTextColorLight">@color/my_like_name</item>
+        <item name="discriptTextColorLight">@color/grey_ten_level</item>
+        <item name="contentWhite">@color/white</item>
+        <item name="grayText">@color/font_color</item>
+        <item name="whiteText">@color/white</item>
+        <item name="cover">@color/four_c_black</item>
+        <item name="ubutton">@color/content_background</item>
+    </style>
+
+    <style name="base_activity_animation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/base_slide_right_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/base_slide_left_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/base_slide_left_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/base_slide_right_out</item>
+        <item name="android:taskOpenEnterAnimation">@anim/base_slide_right_in</item>
+        <item name="android:taskOpenExitAnimation">@anim/base_stay_orig</item>
+        <item name="android:taskCloseEnterAnimation">@anim/base_stay_orig</item>
+        <item name="android:taskCloseExitAnimation">@anim/base_slide_right_out</item>
+        <item name="android:taskToFrontEnterAnimation">@anim/base_slide_right_in</item>
+        <item name="android:taskToFrontExitAnimation">@anim/base_stay_orig</item>
+        <item name="android:taskToBackEnterAnimation">@anim/base_stay_orig</item>
+        <item name="android:taskToBackExitAnimation">@anim/base_slide_right_out</item>
+    </style>
+
+    <style name="XTabLayout_Default_Style" parent="Base.Widget.Design.TabLayout">
+        <item name="x_tabMaxWidth">@dimen/x_design_tab_max_width</item>
+        <item name="x_tabIndicatorColor">?android:colorAccent</item>
+        <item name="x_tabIndicatorHeight">3dp</item>
+        <item name="x_tabPaddingStart">12dp</item>
+        <item name="x_tabPaddingEnd">12dp</item>
+        <item name="x_tabBackground">?attr/selectableItemBackground</item>
+        <item name="x_tabTextAppearance">@style/TextAppearance.Design.Tab</item>
+        <item name="x_tabSelectedTextColor">?android:colorAccent</item>
+        <item name="x_tabGravity">fill</item>
+        <item name="x_tabIndicatorAnimation">true</item>
+    </style>
+
+    <style name="font_10_999999">
+        <item name="android:textSize">10.0sp</item>
+        <item name="android:textColor">?discriptTextColorLight</item>
+    </style>
+
+    <style name="font_10_white">
+        <item name="android:textSize">10.0sp</item>
+        <item name="android:textColor">?whiteText</item>
+    </style>
+
+    <style name="font_11_333333">
+        <item name="android:textSize">11.0sp</item>
+        <item name="android:textColor">@color/mine_textcolor</item>
+    </style>
+
+    <style name="font_11_666666">
+        <item name="android:textSize">11.0sp</item>
+        <item name="android:textColor">?contentTextColorLight</item>
+    </style>
+
+    <style name="font_11_999999">
+        <item name="android:textSize">11.0sp</item>
+        <item name="android:textColor">?discriptTextColorLight</item>
+    </style>
+
+    <style name="font_11_ffffff">
+        <item name="android:textSize">11.0sp</item>
+        <item name="android:textColor">?whiteText</item>
+    </style>
+
+    <style name="font_11_pink">
+        <item name="android:textSize">11.0sp</item>
+        <item name="android:textColor">@color/pink</item>
+    </style>
+
+    <style name="font_11_timelineblue">
+        <item name="android:textSize">11.0sp</item>
+        <item name="android:textColor">@color/timeline_green</item>
+    </style>
+
+    <style name="font_12_333333">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">?nameColor</item>
+    </style>
+
+    <style name="font_12_666666">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">?contentTextColorLight</item>
+    </style>
+
+    <style name="font_12_666666_pinkindicator">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@drawable/selector_text_pink_black</item>
+    </style>
+
+    <style name="font_12_999999">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">?discriptTextColorLight</item>
+    </style>
+
+    <style name="font_12_b2b3b4">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">?grayText</item>
+    </style>
+
+    <style name="font_12_blue">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@color/blue</item>
+    </style>
+
+    <style name="font_12_ffffff">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">?whiteText</item>
+    </style>
+
+    <style name="font_12_ffffff_red_ovel" parent="@style/font_12_ffffff">
+        <item name="android:background">@drawable/shape_solid_red_radius_10_padding_left_6_right_6
+        </item>
+    </style>
+
+    <style name="font_12_green">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@color/timeline_green</item>
+    </style>
+
+    <style name="font_12_line">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@color/line</item>
+    </style>
+
+    <style name="font_12_pink">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@color/pink</item>
+    </style>
+
+    <style name="font_12_white">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">?whiteText</item>
+    </style>
+
+    <style name="font_12_white_80">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@color/white_80</item>
+    </style>
+
+    <style name="font_13_333333">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">?nameColor</item>
+    </style>
+
+    <style name="font_13_4c_black">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">@color/four_c_black</item>
+    </style>
+
+    <style name="font_13_575f66">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">@color/group_grey</item>
+    </style>
+
+    <style name="font_13_666666">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">?contentTextColorLight</item>
+    </style>
+
+    <style name="font_13_999999">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">?discriptTextColorLight</item>
+    </style>
+
+    <style name="font_13_blue">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">@color/tag_blue</item>
+    </style>
+
+    <style name="font_13_blue_ask">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">@color/blue_ask</item>
+    </style>
+
+    <style name="font_13_ffffff">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">?whiteText</item>
+    </style>
+
+    <style name="font_13_pink">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">@color/pink</item>
+    </style>
+
+    <style name="font_13_white">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">?whiteText</item>
+    </style>
+
+    <style name="font_14_333333">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">?nameColor</item>
+    </style>
+
+    <style name="font_14_666666">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">?contentTextColorLight</item>
+    </style>
+
+    <style name="font_14_666666_pinkindicator">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@drawable/selector_text_white_666666</item>
+    </style>
+
+    <style name="font_14_999999">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">?discriptTextColorLight</item>
+    </style>
+
+    <style name="font_14_alway_white">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="font_14_b2b3b4">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">?grayText</item>
+    </style>
+
+    <style name="font_14_blue">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/blue</item>
+    </style>
+
+    <style name="font_14_cccccc">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/line</item>
+    </style>
+
+    <style name="font_14_ffffff">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">?whiteText</item>
+    </style>
+
+    <style name="font_14_pink">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/pink</item>
+    </style>
+
+    <style name="font_14_topic_blue">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/topic_blue</item>
+    </style>
+
+    <style name="font_14_white">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">?whiteText</item>
+    </style>
+
+    <style name="font_14_white_80">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/white_80</item>
+    </style>
+
+    <style name="font_14_white_blackindicator">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@drawable/selector_text_white_black</item>
+    </style>
+
+    <style name="font_14_white_pinkindicator">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@drawable/selector_text_pink_white</item>
+    </style>
+
+    <style name="font_15_333333">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">?nameColor</item>
+    </style>
+
+    <style name="font_15_666666">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">?contentTextColorLight</item>
+    </style>
+
+    <style name="font_15_999999">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">?discriptTextColorLight</item>
+    </style>
+
+    <style name="font_15_ff6fa2">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">@color/pink</item>
+    </style>
+
+    <style name="font_15_pink">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">@color/pink</item>
+    </style>
+
+    <style name="font_15_white">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">?whiteText</item>
+    </style>
+
+    <style name="font_16_2db2ea">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/topic_blue</item>
+    </style>
+
+    <style name="font_16_333333">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">?nameColor</item>
+    </style>
+
+    <style name="font_16_666666">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">?contentTextColorLight</item>
+    </style>
+
+    <style name="font_16_666666_pinkindicator">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@drawable/selector_text_white_666666</item>
+    </style>
+
+    <style name="font_16_999999">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">?discriptTextColorLight</item>
+    </style>
+
+    <style name="font_16_blue">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/blue</item>
+    </style>
+
+    <style name="font_16_cccccc">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/line</item>
+    </style>
+
+    <style name="font_16_pink">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/pink</item>
+    </style>
+
+    <style name="font_16_white">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">?whiteText</item>
+    </style>
+
+    <style name="font_18_333333">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">?nameColor</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="font_18_recommend_selecotor">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@drawable/selector_recommend_text_color</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="font_18_yellow">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/yellow_text</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="font_20_333333">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">?nameColor</item>
+    </style>
+
+    <style name="font_20_pink">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">@color/pink</item>
+    </style>
+
+    <style name="font_20_white">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">?whiteText</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="font_22_333333">
+        <item name="android:textSize">22.0sp</item>
+        <item name="android:textColor">?nameColor</item>
+    </style>
+
+    <style name="font_22_333333_bold">
+        <item name="android:textSize">22.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/mine_textcolor</item>
+    </style>
+
+    <style name="font_25_333333">
+        <item name="android:textSize">25.0sp</item>
+        <item name="android:textColor">?nameColor</item>
+    </style>
+
+    <style name="font_32_pink">
+        <item name="android:textSize">32.0sp</item>
+        <item name="android:textColor">@color/pink</item>
+    </style>
+</resources>

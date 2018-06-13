@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="mainpage_tab">
+        <item>关注</item>
+        <item>发现</item>
+        <item>新番</item>
+        <item>圈子</item>
+    </string-array>
+    <string-array name="discover_tab">
+        <item>绘画</item>
+        <item>小说</item>
+        <item>COS</item>
+    </string-array>
+    <string-array name="group_tab">
+        <item>热门</item>
+        <item>ACG大事件</item>
+        <item>情感树洞</item>
+        <item>番剧评价</item>
+        <item>游戏攻略</item>
+    </string-array>
+
+    <string-array name="tag_detail">
+        <item>热门</item>
+        <item>最新</item>
+    </string-array>
+    <string-array name="person_detail">
+        <item>发布</item>
+        <item>喜欢</item>
+    </string-array>
+
+    <string-array name="emoji">
+        <item>(!⊙ω⊙)ノ</item>
+        <item>(。・∀・)ノ゛</item>
+        <item>(TωT)</item>
+        <item>(･ω-｡)</item>
+        <item>ヾ(≧∇≦*)</item>
+        <item>ヾ(ﾟ∀ﾟ○)ﾂ</item>
+        <item>ヽ(*´Д｀*)ﾉ</item>
+        <item>(；ω；｀)</item>
+        <item>(/ω＼*)</item>
+        <item>(●＾U＾●)</item>
+        <item>(｡ゝω･)bﾞ</item>
+        <item>(;´ρ`)</item>
+        <item>(´・ω・｀)</item>
+        <item>∑(ﾟωﾟﾉ)ノ</item>
+        <item>(-д-；)</item>
+        <item>（＾ε＾）</item>
+        <item>(`_ゝ´)</item>
+        <item>（＞△＜）</item>
+        <item>m(_ _)m</item>
+        <item>┌(^q^ ┐)┐</item>
+        <item>_(:з」∠)_</item>
+        <item>(☆_☆)〆</item>
+    </string-array>
+    <string-array name="my_mark_lists">
+        <item>原作</item>
+        <item>标签</item>
+        <item>连载</item>
+        <item>问题</item>
+        <item>用户</item>
+    </string-array>
+
+
+
+    <string-array name="not_use_white_activity">
+        <item>ComplexDetailActivity</item>
+        <item>DetailActivity4WebSite</item>
+        <item>CircleSmoothActivity</item>
+        <item>CircleTagSmoothActivity</item>
+        <item>RelatedCircleActivity</item>
+        <item>SmoothPersonActivity</item>
+        <item>ViewPictureActivity2</item>
+        <item>WorkDetailActivity4WebSite</item>
+        <item>NovelIndex4WebSite</item>
+        <item>MixWebImageViewActivity</item>
+        <item>GoodsShellImageActivity</item>
+        <item>GoodsBigImageActivity</item>
+        <item>NovelComplexActivity</item>
+        <item>CircleActivity4WebSite</item>
+        <item>CircleWorkActivity4WebSite</item>
+        <item>StartActivity</item>
+        <item>MixWebActivity</item>
+        <item>ShareActivity</item>
+        <item>EditActivity</item>
+        <item>ChargeSelectActivity</item>
+        <item>EditRewardActivity</item>
+        <item>FindPwdActivity</item>
+        <item>EditPrivateMessageActivity</item>
+        <item>GoodsSelectActivity</item>
+        <item>PostPictureActivity</item>
+        <item>ScreenCaptureActivity</item>
+    </string-array>
+    <string-array name="reply_0_content">
+        <item>一只野生的沙发等你占领！</item>
+        <item>去吧，就是你了！评论首杀</item>
+        <item>告诉我，你是世界第几帅？</item>
+        <item>来不及解释了，快评论！</item>
+        <item>这时候，只要评论就好了</item>
+        <item>太太累倒了，要评论才能起来~</item>
+        <item>为了不会寂寞，评论就拜托你了</item>
+        <item>评论，是强者的特权！</item>
+        <item>英雄，就是能打破0评论的人啊</item>
+        <item>拒绝KY，有爱吃粮~</item>
+    </string-array>
+    <string-array name="reply_not_0_content">
+        <item>评论，不是一个人的游戏！</item>
+        <item>评论一句，前排打call！</item>
+        <item>前方高能，请迅速评论！</item>
+        <item>爆裂吧！评论！</item>
+        <item>为了保护重要的人，赌上评论！</item>
+        <item>有想保护的东西，那就评论吧！</item>
+        <item>评论，必将百倍奉还！</item>
+        <item>你的作品，令我诗兴大发！</item>
+        <item>评论点赞，都要勇往直前~</item>
+        <item>拒绝KY，有爱吃粮~</item>
+    </string-array>
+    <string-array name="report_type">
+        <item>@string/report_ads_rubbish</item>
+        <item>@string/report_political_content</item>
+        <item>@string/report_unfriendly_content</item>
+        <item>@string/report_illegal_content</item>
+        <item>@string/report_copy_others</item>
+        <item>@string/report_others</item>
+    </string-array>
+    <string-array name="support_scheme">
+        <item>openapp.jdmobile://</item>
+        <item>intent://</item>
+        <item>bcyapp://</item>
+        <item>bcyapps://</item>
+        <item>bcyapp_https://</item>
+        <item>youku://</item>
+        <item>taobao://</item>
+        <item>itaobao://</item>
+        <item>tbopen://</item>
+        <item>iqiyi://</item>
+        <item>qiyi-iphone://</item>
+        <item>bilibili://</item>
+        <item>tenvideo2://</item>
+        <item>tenvideo3://</item>
+        <item>pptv://</item>
+        <item>tmall://</item>
+    </string-array>
+    <string-array name="user_report_type">
+        <item>@string/user_repost_one</item>
+        <item>@string/user_repost_two</item>
+        <item>@string/user_repost_three</item>
+        <item>@string/user_repost_four</item>
+        <item>@string/user_repost_five</item>
+        <item>@string/report_others</item>
+    </string-array>
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_background_white"
+    android:orientation="vertical"
+    android:paddingLeft="12.0dip"
+    android:paddingRight="12.0dip"
+    android:paddingTop="16.0dip">
+
+    <TextView
+        android:id="@+id/group_new_item_title_one"
+        style="@style/font_16_333333"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lineSpacingExtra="4.0dip"
+        android:maxLines="3"
+        android:textStyle="bold" />
+
+    <com.xh.study.bcy.widget.ScaleRoundedImageView
+        android:id="@+id/img_big"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="6.0dip"
+        android:scaleType="centerCrop"
+        app:riv_corner_radius="3.0dip"
+        app:scale="0.5" />
+
+    <TextView
+        android:id="@+id/talk_intro"
+        style="@style/font_13_575f66"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6.0dip"
+        android:ellipsize="end"
+        android:lineSpacingExtra="4.0dip"
+        android:maxLines="3" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8.0dip"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/from_mark"
+            style="@style/font_11_666666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/from" />
+
+        <TextView
+            android:id="@+id/tag_text"
+            style="@style/font_11_timelineblue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4.0dip"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/tv_postnum"
+            style="@style/font_11_666666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4.0dip"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_below="@id/best_img"
+        android:layout_marginTop="16.0dip"
+        android:background="@color/block_line" />
+</LinearLayout>

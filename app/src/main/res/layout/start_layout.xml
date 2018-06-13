@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/bottom_logos_view"
+        android:layout_width="fill_parent"
+        android:layout_height="84.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="144.0dip"
+            android:layout_height="45.0dip"
+            android:layout_margin="18.0dip"
+            android:src="@drawable/bcy_logo" />
+
+        <ImageView
+            android:id="@+id/iv_channel_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/bottom_logos_view"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/tv_skip"
+        style="@style/font_10_white"
+        android:layout_width="50.0dip"
+        android:layout_height="24.0dip"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16.0dip"
+        android:layout_marginTop="32.0dip"
+        android:background="@drawable/shape_solid_black35_radius_2"
+        android:gravity="center"
+        android:text="@string/skip"
+        android:visibility="visible" />
+</RelativeLayout>

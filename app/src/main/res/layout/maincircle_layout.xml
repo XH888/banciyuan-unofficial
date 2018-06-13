@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <com.handmark.pulltorefresh.library.extras.recyclerview.PullToRefreshRecyclerView
+        android:id="@+id/recleview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <com.xh.study.bcy.widget.StateLayout
+        android:id="@+id/base_progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>

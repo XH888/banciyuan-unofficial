@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/write_item_one" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.theophrast.ui.widget.SquareImageView android:layout_gravity="center_vertical" android:id="@id/item_cover" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <ImageView android:layout_gravity="center" android:id="@+id/item_video_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/video_play" />
+    <TextView android:layout_gravity="bottom|center|right" android:id="@+id/item_video_time" android:background="@drawable/shape_solid_black30_radius_2" android:paddingLeft="4.0dip" android:paddingTop="2.0dip" android:paddingRight="4.0dip" android:paddingBottom="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:layout_marginBottom="4.0dip" style="@style/font_12_ffffff" />
+</FrameLayout>

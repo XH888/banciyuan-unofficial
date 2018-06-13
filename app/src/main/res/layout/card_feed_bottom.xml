@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ground_bottom_lly"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="12.0dip" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_marginLeft="12.0dip"
+        android:layout_marginRight="12.0dip"
+        android:background="@color/block_line" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/feed_share_rly"
+            android:layout_width="fill_parent"
+            android:layout_height="36.0dip"
+            android:layout_weight="1.0">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/feed_share_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/share_feed" />
+
+                <TextView
+                    android:id="@+id/feed_share_tv"
+                    style="@style/font_12_666666"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:minWidth="24.0dip"
+                    android:paddingLeft="4.0dip"
+                    android:text="@string/share" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/feed_comment_rly"
+            android:layout_width="fill_parent"
+            android:layout_height="36.0dip"
+            android:layout_weight="1.0">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/feed_comment_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/feed_comment_img" />
+
+                <TextView
+                    android:id="@+id/feed_comment_tv"
+                    style="@style/font_12_666666"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:minWidth="24.0dip"
+                    android:paddingLeft="4.0dip"
+                    android:text="@string/comment" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/feed_like_rly"
+            android:layout_width="fill_parent"
+            android:layout_height="36.0dip"
+            android:layout_weight="1.0">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/feed_like_img"
+                    android:layout_width="32.0dip"
+                    android:layout_height="32.0dip"
+                    android:padding="7.0dip"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/feed_parise" />
+
+                <TextView
+                    android:id="@+id/feed_like_tv"
+                    style="@style/font_12_666666"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:minWidth="24.0dip"
+                    android:paddingLeft="4.0dip" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

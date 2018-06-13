@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="a_c_black">#ac000000</color>
+
+    <color name="background">#fff5f5f5</color>
+
+    <color name="bar_color">#ff5e5e5e</color>
+    <color name="bg">#ffe5e5e5</color>
+    <color name="bg_sencond">#ffe5e5e5</color>
+    <color name="bg_two">#fff7f7f7</color>
+    <color name="black">#ff000000</color>
+    <color name="black10">#19000000</color>
+    <color name="block_line">#fff5f5f5</color>
+    <color name="blue">#ff4d70a5</color>
+    <color name="blue_ask">#ff4d70a5</color>
+
+
+    <color name="c_c_light_pink">#ccff6fa2</color>
+    <color name="cc_black">#cc000000</color>
+    <color name="content_background">#fff5f5f5</color>
+    <color name="content_background_alpha_90">#e5fafafa</color>
+    <color name="crop__button_bar">#fff3f3f3</color>
+    <color name="crop__button_text">#ff666666</color>
+    <color name="crop__selector_focused">#77000000</color>
+    <color name="crop__selector_pressed">#1a000000</color>
+    <color name="darkred">#fff43531</color>
+    <color name="defaultTagsTextColor">#ffffffff</color>
+
+    <color name="design_textinput_error_color_dark">#ffff6e6e</color>
+    <color name="design_textinput_error_color_light">#ffd50000</color>
+
+    <color name="down_warn">#ffcccccc</color>
+    <color name="eight_eight_black">#88000000</color>
+    <color name="eight_zero_white">#80ffffff</color>
+    <color name="exo_edit_mode_background_color">#fff4f3f0</color>
+    <color name="f_zero_light_pink">#f0ffa5cb</color>
+    <color name="font_blue">#ff4d70a5</color>
+    <color name="font_color">#ffb2b3b4</color>
+
+    <color name="four_c_black">#4c000000</color>
+    <color name="goods_back">#ffefefef</color>
+    <color name="gray_10">#19000000</color>
+    <color name="grey_eight_level">#ff616161</color>
+    <color name="grey_one_level">#fff5f5f5</color>
+    <color name="grey_six_level">#ff7d7c7c</color>
+    <color name="grey_ten_level">#ff999999</color>
+    <color name="group_content_back">#fff7f9fa</color>
+    <color name="group_grey">#ff575f66</color>
+
+    <color name="k80_80">#cc333333</color>
+    <color name="label_blue">#fff0f4fa</color>
+    <color name="label_text_blue">#ff7490b9</color>
+    <color name="light_pink">#ffffdfea</color>
+    <color name="light_privatemessage_blue">#ffe6ebf1</color>
+    <color name="light_white_level_three">#fff5f5f5</color>
+    <color name="line">#ffcccccc</color>
+
+    <color name="mine_textcolor">#ff333333</color>
+    <color name="mine_textcolor_20">#66333333</color>
+    <color name="my_like_name">#ff666666</color>
+    <color name="my_like_name_dark">#ff5a5f63</color>
+    <color name="name_color">#ff4d4d4d</color>
+    <color name="nine_nine_black">#99000000</color>
+
+    <color name="pink">#ffff6fa2</color>
+    <color name="pink_99">#99ff6fa2</color>
+    <color name="pink_back">#ffe65589</color>
+
+    <color name="recommend_main">#ff3d3f41</color>
+    <color name="red">#ffff4444</color>
+    <color name="red_label">#ccff4c54</color>
+
+    <color name="series_green">#ff75c940</color>
+    <color name="series_orange">#ffffaa2f</color>
+    <color name="seven_f_black">#7f000000</color>
+
+    <color name="tag_blue">#ff4d70a5</color>
+    <color name="text_report">#ff535353</color>
+    <color name="three_three_black">#33000000</color>
+    <color name="timeline_green">#ff4d70a5</color>
+    <color name="top_one_red">#ffff4857</color>
+    <color name="top_three_yellow">#ffefc15a</color>
+    <color name="top_two_red">#ffee8159</color>
+    <color name="topic_blue">#ff4d70a5</color>
+    <color name="transparent">#00000000</color>
+    <color name="two_six_black">#26000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="white_01">#01ffffff</color>
+    <color name="white_25">#33ffffff</color>
+    <color name="white_30">#4cffffff</color>
+    <color name="white_60">#99ffffff</color>
+    <color name="white_80">#ccffffff</color>
+    <color name="white_90">#e6ffffff</color>
+    <color name="white_95">#f3ffffff</color>
+    <color name="white_fafafa">#fffafafa</color>
+    <color name="yellow_text">#ffffab33</color>
+
+
+
+
+</resources>

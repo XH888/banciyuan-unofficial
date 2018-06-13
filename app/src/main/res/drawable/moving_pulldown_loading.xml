@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="120" android:drawable="@drawable/pull_down_a" />
+    <item android:duration="120" android:drawable="@drawable/pull_down_b" />
+    <item android:duration="120" android:drawable="@drawable/pull_down_c" />
+    <item android:duration="280" android:drawable="@drawable/pull_down_d" />
+    <item android:duration="120" android:drawable="@drawable/pull_down_c" />
+    <item android:duration="120" android:drawable="@drawable/pull_down_b" />
+</animation-list>

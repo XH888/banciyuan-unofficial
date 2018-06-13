@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:focusbutton="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@+id/rl_title_top" android:paddingLeft="12.0dip" android:paddingTop="10.0dip" android:paddingRight="12.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView android:id="@+id/civ_header_top" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/user_pic_big" android:layout_centerVertical="true" />
+        <com.xh.study.bcy.widget.FocusButton android:textSize="13.0sp" android:id="@+id/tv_recommended_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" focusbutton:selectText="@string/focused" focusbutton:unselectText="@string/focus" focusbutton:useDrawable="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/viewcount" android:background="@drawable/shape_solid_trans_stoke_1_666666_radius_4" android:paddingLeft="6.0dip" android:paddingTop="4.0dip" android:paddingRight="6.0dip" android:paddingBottom="4.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:textSize="10.0sp" android:textColor="@color/my_like_name" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/read_nums" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/my_like_name" android:layout_gravity="center_horizontal" android:id="@+id/tv_viewcount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" />
+        </LinearLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_toLeftOf="@id/tv_recommended_top" android:layout_toRightOf="@id/civ_header_top" android:layout_centerVertical="true">
+            <TextView android:ellipsize="end" android:id="@+id/tv_name_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/font_14_333333" />
+            <TextView android:gravity="center_vertical" android:id="@+id/tv_time_top" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:maxLines="1" android:layout_toRightOf="@id/tv_name_top" android:layout_alignTop="@id/tv_name_top" android:layout_alignBottom="@id/tv_name_top" style="@style/font_12_b2b3b4" />
+            <TextView android:ellipsize="end" android:id="@+id/tv_intro_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="" android:maxLines="1" android:layout_below="@id/tv_name_top" style="@style/font_11_999999" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:background="@color/block_line" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" />
+</LinearLayout>

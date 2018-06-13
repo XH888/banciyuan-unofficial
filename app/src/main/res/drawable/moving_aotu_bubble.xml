@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="200" android:drawable="@drawable/aotu_bubble_1" />
+    <item android:duration="80" android:drawable="@drawable/aotu_bubble_2" />
+    <item android:duration="80" android:drawable="@drawable/aotu_bubble_3" />
+    <item android:duration="280" android:drawable="@drawable/aotu_bubble_4" />
+    <item android:duration="80" android:drawable="@drawable/aotu_bubble_5" />
+    <item android:duration="360" android:drawable="@drawable/aotu_bubble_1" />
+    <item android:duration="80" android:drawable="@drawable/aotu_bubble_6" />
+    <item android:duration="80" android:drawable="@drawable/aotu_bubble_7" />
+    <item android:duration="280" android:drawable="@drawable/aotu_bubble_8" />
+    <item android:duration="80" android:drawable="@drawable/aotu_bubble_9" />
+    <item android:duration="360" android:drawable="@drawable/aotu_bubble_1" />
+    <item android:duration="80" android:drawable="@drawable/aotu_bubble_10" />
+    <item android:duration="80" android:drawable="@drawable/aotu_bubble_11" />
+    <item android:duration="280" android:drawable="@drawable/aotu_bubble_12" />
+    <item android:duration="80" android:drawable="@drawable/aotu_bubble_13" />
+    <item android:duration="160" android:drawable="@drawable/aotu_bubble_1" />
+</animation-list>

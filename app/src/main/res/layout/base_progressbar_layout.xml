@@ -1,0 +1,18 @@
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:visibility="visible">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/progressbar_loading_layout" android:background="?ubackground" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <ProgressBar android:layout_width="52.0dip" android:layout_height="92.0dip" android:layout_marginRight="0.0dip" android:indeterminateDrawable="@drawable/moving_frame_loading" />
+        <TextView android:id="@+id/progressbar_loading_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/base_progressbar_loading" android:alpha="0.44" style="@style/font_14_333333" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/progressbar_failed_layout" android:background="?ubackground" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/empty_bcy" android:scaleType="fitCenter" />
+        <TextView android:id="@+id/progressbar_failed_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/base_progressbar_failed" android:alpha="0.44" style="@style/font_14_333333" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/progressbar_nodata_layout" android:background="?ubackground" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/empty_bcy" android:scaleType="fitCenter" />
+        <TextView android:id="@+id/progressbar_nodata_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/base_progressbar_nodata" android:alpha="0.44" style="@style/font_14_333333" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/custom_container" android:background="?ubackground" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</merge>

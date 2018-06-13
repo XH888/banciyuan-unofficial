@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingTop="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@+id/group_new_line_one" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="10.0sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/group_new_postnum" android:background="@drawable/shape_solid_red_radius_10_padding_left_6_right_6" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_alignParentRight="true" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/my_like_name" android:ellipsize="end" android:id="@+id/group_new_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:layout_marginBottom="2.0dip" android:includeFontPadding="false" android:layout_toLeftOf="@id/group_new_postnum" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/font_color" android:id="@+id/group_new_item_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_below="@id/group_new_item_title" android:layout_alignParentRight="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_below="@id/group_new_item_title">
+            <ImageView android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/focus_icon" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/font_color" android:id="@+id/num_area_focus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
+            <ImageView android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/item_icon" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/font_color" android:id="@+id/num_area_items" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:layout_width="fill_parent" android:layout_height="16.0dip" />
+    <View android:background="@color/block_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

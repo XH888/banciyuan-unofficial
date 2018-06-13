@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/ll"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:background="@color/white_fafafa">
+
+            <FrameLayout
+                android:id="@+id/right_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12.0dip">
+
+                <ImageView
+                    android:id="@+id/post_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="6.0dip"
+                    android:src="@drawable/post_icon_pink"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/view_login"
+                    style="@style/font_14_333333"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10.0dip"
+                    android:background="@drawable/shape_solid_trans_stoke_1_333333_radius_2"
+                    android:gravity="center"
+                    android:paddingBottom="4.0dip"
+                    android:paddingLeft="6.0dip"
+                    android:paddingRight="6.0dip"
+                    android:paddingTop="4.0dip"
+                    android:text="@string/login_login"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/search"
+                android:layout_width="fill_parent"
+                android:layout_height="32.0dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12.0dip"
+                android:layout_toLeftOf="@id/right_btn"
+                android:background="@drawable/shape_solid_e5e5e5_radius_4"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="16.0dip"
+                    android:layout_height="16.0dip"
+                    android:layout_marginLeft="8.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@drawable/search_black" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    style="@style/font_13_4c_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/search_your_interest" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <com.xh.study.bcy.widget.tablayout.XTabLayout
+            android:id="@+id/group_tablayout"
+            android:layout_width="fill_parent"
+            android:layout_height="36.0dip"
+            android:background="@color/white_fafafa"
+            android:scrollbars="none"
+            app:x_tabMode="scrollable"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:background="@color/line" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/team_pager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+    <com.xh.study.bcy.widget.StateLayout
+        android:id="@+id/base_progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>

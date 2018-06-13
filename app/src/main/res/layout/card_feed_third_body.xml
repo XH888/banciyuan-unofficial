@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/card_feed_header" />
+
+    <TextView
+        android:id="@+id/feed_content_title"
+        style="@style/font_16_333333"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4.0dip"
+        android:layout_marginLeft="12.0dip"
+        android:layout_marginRight="12.0dip"
+        android:textStyle="bold" />
+
+    <com.xh.study.bcy.widget.EllipsisTextView
+        android:id="@+id/feed_intro"
+        style="@style/font_15_333333"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12.0dip"
+        android:layout_marginLeft="12.0dip"
+        android:layout_marginRight="12.0dip"
+        android:ellipsize="end"
+        android:lineSpacingExtra="4.0dip"
+        android:maxLines="3" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8.0dip"
+        android:layout_marginRight="12.0dip"
+        android:orientation="horizontal">
+
+        <com.xh.study.bcy.widget.ScaleRoundedImageView
+            android:id="@+id/feed_content_img_one"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4.0dip"
+            android:layout_weight="1.0"
+            android:scaleType="fitCenter"
+            app:riv_corner_radius="3.0dip"
+            app:scale="1.0"/>
+        <com.xh.study.bcy.widget.ScaleRoundedImageView
+            android:id="@+id/feed_content_img_two"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4.0dip"
+            android:layout_weight="1.0"
+            android:scaleType="fitCenter"
+            app:riv_corner_radius="3.0dip"
+            app:scale="1.0"/>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4.0dip"
+            android:layout_weight="1.0">
+
+            <com.xh.study.bcy.widget.ScaleRoundedImageView
+                android:id="@+id/feed_content_img_three"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                app:riv_corner_radius="3.0dip"
+                app:scale="1.0"/>
+            <TextView
+                android:id="@+id/ground_pagenum_tv"
+                style="@style/font_12_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center|right"
+                android:layout_marginBottom="8.0dip"
+                android:layout_marginRight="8.0dip"
+                android:background="@drawable/shape_solid_black30_radius_2"
+                android:drawableLeft="@drawable/multi_pic"
+                android:gravity="center"
+                android:paddingBottom="2.0dip"
+                android:paddingLeft="4.0dip"
+                android:paddingRight="4.0dip"
+                android:paddingTop="2.0dip"
+                android:text="@string/multi_pic" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <com.xh.study.bcy.widget.TagView
+        android:id="@+id/feed_tags"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12.0dip"
+        android:paddingLeft="12.0dip"
+        android:paddingRight="12.0dip"
+        android:visibility="visible"
+        app:t_maxline="1" />
+
+    <include layout="@layout/card_feed_bottom" />
+
+    <com.xh.study.bcy.widget.Space
+        android:layout_width="fill_parent"
+        android:layout_height="8.0dip" />
+</LinearLayout>

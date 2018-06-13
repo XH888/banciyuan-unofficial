@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@+id/view_recommend_content" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="?ubackground" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+    <RelativeLayout android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/more_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/more" style="@style/font_12_pink" />
+            <ImageView android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/go_pink" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/more_line">
+            <ImageView android:layout_gravity="center_vertical" android:background="@drawable/recommend_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="6.0dip" />
+            <TextView android:textStyle="bold" android:gravity="center_vertical" android:id="@+id/recommend_rela_tv" android:layout_width="fill_parent" android:layout_height="36.0dip" android:text="@string/recommend_content" style="@style/font_14_333333" />
+        </LinearLayout>
+    </RelativeLayout>
+    <HorizontalScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/recommend_content_container" android:paddingLeft="12.0dip" android:paddingRight="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </HorizontalScrollView>
+</LinearLayout>

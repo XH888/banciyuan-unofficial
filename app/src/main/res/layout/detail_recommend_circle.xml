@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="96.0dip" android:layout_height="96.0dip" android:layout_marginRight="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.makeramen.roundedimageview.RoundedImageView android:id="@+id/iv_circle_cover" android:layout_width="96.0dip" android:layout_height="96.0dip" android:scaleType="centerCrop" app:riv_corner_radius="3.0dip" />
+    <View android:id="@+id/view_circle_shadow" android:background="@drawable/shape_gradient_shadow_dark_radius_3" android:layout_width="96.0dip" android:layout_height="48.0dip" android:layout_alignParentBottom="true" />
+    <LinearLayout android:orientation="vertical" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="96.0dip" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textStyle="bold" android:ellipsize="end" android:id="@+id/tv_item_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" style="@style/font_16_white" />
+        <TextView android:textStyle="bold" android:ellipsize="end" android:id="@+id/tv_item_event_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" style="@style/font_16_white" />
+        <TextView android:ellipsize="end" android:id="@+id/tv_circle_workcounts" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" style="@style/font_12_white" />
+    </LinearLayout>
+</RelativeLayout>

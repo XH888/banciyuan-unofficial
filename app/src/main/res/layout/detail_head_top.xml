@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:focusbutton="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="48.0dip"
+    android:background="?cardBackGround"
+    android:clickable="true">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="8.0dip">
+
+        <LinearLayout
+            android:id="@+id/back_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="32.0dip"
+                android:layout_height="32.0dip"
+                android:src="@drawable/back_black" />
+
+            <View
+                android:layout_width="1.0dip"
+                android:layout_height="16.0dip"
+                android:layout_marginLeft="8.0dip"
+                android:background="?blockLine" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_header_top"
+                android:layout_width="28.0dip"
+                android:layout_height="28.0dip"
+                android:layout_marginLeft="8.0dip"
+                android:src="@drawable/user_pic_big" />
+
+            <ImageView
+                android:id="@+id/vip_logo_floot"
+                android:layout_width="14.0dip"
+                android:layout_height="14.0dip"
+                android:layout_gravity="bottom|center|right"
+                android:src="@drawable/vip"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginRight="12.0dip">
+
+            <ImageView
+                android:id="@+id/float_action"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/share_black" />
+
+            <com.xh.study.bcy.widget.FocusButton
+                android:id="@+id/tv_focuse_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12.0dip"
+                android:layout_toLeftOf="@id/float_action"
+                android:textSize="11.0sp"
+                focusbutton:boardColor="@color/black"
+                focusbutton:selectText="@string/focused"
+                focusbutton:unselectText="@string/focus"
+                focusbutton:unselectedColor="@color/black"
+                focusbutton:useDrawable="true" />
+
+            <LinearLayout
+                android:id="@+id/viewcount_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12.0dip"
+                android:layout_toLeftOf="@id/float_action"
+                android:background="@drawable/shape_solid_trans_stoke_1_333333_radius_2"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="4.0dip"
+                android:paddingLeft="6.0dip"
+                android:paddingRight="6.0dip"
+                android:paddingTop="4.0dip"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/font_11_666666"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/read_nums" />
+
+                <TextView
+                    android:id="@+id/tv_viewcount_top"
+                    style="@style/font_11_333333"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="2.0dip"
+                    android:text="\ 123321123" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8.0dip"
+                android:layout_toLeftOf="@id/tv_focuse_top">
+
+                <TextView
+                    android:id="@+id/tv_name_top"
+                    style="@style/font_15_333333"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:id="@+id/tv_time_top"
+                    style="@style/font_10_999999"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/tv_name_top"
+                    android:layout_alignTop="@id/tv_name_top"
+                    android:layout_marginLeft="8.0dip"
+                    android:layout_toRightOf="@id/tv_name_top"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_selfintro_top"
+                    style="@style/font_11_999999"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/tv_name_top"
+                    android:layout_below="@id/tv_name_top"
+                    android:ellipsize="end"
+                    android:maxLines="1" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/split_line"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/line" />
+</RelativeLayout>

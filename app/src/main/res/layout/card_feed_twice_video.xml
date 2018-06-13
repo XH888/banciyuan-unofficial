@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_solid_trans_stoke_05_block_line_radius_3">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/feed_content_img"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="0.5dip"
+            android:scaleType="centerCrop"
+            app:riv_corner_radius="3.0dip" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/video_play" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/feed_intro"
+        style="@style/font_12_333333"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.0dip"
+        android:ellipsize="end"
+        android:lineSpacingExtra="2.0dip"
+        android:maxLines="2" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.0dip">
+
+        <TextView
+            android:id="@+id/feed_twice_praise"
+            style="@style/font_12_999999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="4.0dip" />
+
+        <TextView
+            android:id="@+id/feed_name"
+            style="@style/font_12_green"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12.0dip"
+            android:layout_toLeftOf="@id/feed_twice_praise" />
+    </RelativeLayout>
+</LinearLayout>

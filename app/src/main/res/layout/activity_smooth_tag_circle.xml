@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_circle_work_header" />
+
+    <include layout="@layout/circle_float_header"/>
+
+    <com.xh.study.bcy.widget.StateLayout
+        android:id="@+id/base_progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <include layout="@layout/circle_focuse_bottom_layout" />
+</RelativeLayout>

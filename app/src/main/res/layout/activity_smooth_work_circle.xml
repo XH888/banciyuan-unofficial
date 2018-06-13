@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:scaleimageview="http://schemas.android.com/apk/res-auto">
+    <android.support.v4.view.ViewPager android:id="@id/event_content_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include layout="@layout/activity_circle_work_header" />
+    <include layout="@layout/circle_float_header" />
+    <include layout="@layout/base_progressbar_layout" />
+    <include layout="@layout/circle_focuse_bottom_layout" />
+    <FrameLayout android:id="@+id/circle_mask" android:background="@color/nine_nine_black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.xh.study.bcy.widget.ScaleImageView android:layout_gravity="bottom" android:id="@+id/circle_mask_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="20.0dip" android:scaleType="centerCrop" scaleimageview:scale="1.2" />
+    </FrameLayout>
+</RelativeLayout>

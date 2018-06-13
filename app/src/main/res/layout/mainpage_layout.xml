@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:background="@color/white_fafafa"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="11.0" />
+
+        <com.xh.study.bcy.widget.tablayout.XTabLayout
+            android:id="@+id/tablayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="6.0"
+            android:scrollbars="none"
+            app:x_tabIndicatorWidth="32.0dip"
+            app:x_tabPaddingStart="0.0dip"
+            app:x_tabPaddingEnd="0.0dip"
+            app:x_tabTextColor="@color/mine_textcolor"
+            app:x_tabSize="16.0sp"/>
+
+        <FrameLayout
+            android:id="@+id/view_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10.0dip"
+            android:layout_weight="11.0"
+            android:visibility="invisible">
+
+            <TextView
+                style="@style/font_14_333333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:background="@drawable/shape_solid_trans_stoke_1_333333_radius_2"
+                android:paddingBottom="4.0dip"
+                android:paddingLeft="6.0dip"
+                android:paddingRight="6.0dip"
+                android:paddingTop="4.0dip"
+                android:text="@string/login_login" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/line" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+</LinearLayout>

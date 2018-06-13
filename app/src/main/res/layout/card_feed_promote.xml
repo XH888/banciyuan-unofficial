@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/card_feed_header" />
+
+    <com.xh.study.bcy.widget.ScaleImageView
+        android:id="@+id/promotion_img"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12.0dip"
+        android:layout_marginRight="12.0dip"
+        android:layout_marginTop="12.0dip"
+        app:scale="0.484" />
+    <TextView
+        android:id="@+id/promotion_text"
+        style="@style/font_14_333333"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12.0dip"
+        android:layout_marginLeft="12.0dip"
+        android:layout_marginRight="12.0dip"
+        android:layout_marginTop="4.0dip" />
+
+    <com.xh.study.bcy.widget.Space
+        android:layout_width="fill_parent"
+        android:layout_height="8.0dip" />
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@+id/screen_shot" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_content" android:background="@drawable/shape_solid_background_radius_top_6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="44.0dip" android:layout_marginLeft="16.0dip" android:text="@string/share_to" style="@style/font_14_666666" />
+        <HorizontalScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/share_line" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@+id/qq_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip">
+                    <ImageView android:id="@+id/iv_qq" android:layout_width="68.0dip" android:layout_height="68.0dip" android:src="@drawable/qq" />
+                    <TextView android:textColor="@color/mine_textcolor" android:gravity="center" android:layout_width="wrap_content" android:layout_height="38.0dip" android:text="@string/tencent_qq" android:layout_below="@id/iv_qq" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/qzone_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip">
+                    <ImageView android:id="@+id/iv_qqzone" android:layout_width="68.0dip" android:layout_height="68.0dip" android:src="@drawable/qqzone" />
+                    <TextView android:textColor="@color/mine_textcolor" android:gravity="center" android:layout_width="wrap_content" android:layout_height="38.0dip" android:text="@string/tencent_qzone" android:layout_below="@id/iv_qqzone" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/weibo_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip">
+                    <ImageView android:id="@+id/iv_weibo" android:layout_width="68.0dip" android:layout_height="68.0dip" android:src="@drawable/weibo" />
+                    <TextView android:textColor="@color/mine_textcolor" android:gravity="center" android:layout_width="wrap_content" android:layout_height="38.0dip" android:text="@string/weibo" android:layout_below="@id/iv_weibo" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/circle_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip">
+                    <ImageView android:id="@+id/iv_friend" android:layout_width="68.0dip" android:layout_height="68.0dip" android:src="@drawable/friend_circle" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                    <TextView android:textColor="@color/mine_textcolor" android:gravity="center" android:layout_width="wrap_content" android:layout_height="38.0dip" android:text="@string/friend_zone" android:layout_below="@id/iv_friend" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/weixin_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="12.0dip">
+                    <ImageView android:id="@+id/iv_wechat" android:layout_width="68.0dip" android:layout_height="68.0dip" android:src="@drawable/wechat" />
+                    <TextView android:textColor="@color/mine_textcolor" android:gravity="center" android:layout_width="wrap_content" android:layout_height="38.0dip" android:text="@string/weixin" android:layout_below="@id/iv_wechat" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+        <View android:id="@+id/line_split" android:background="@color/block_line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" />
+        <HorizontalScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/control_line" android:paddingTop="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@+id/copy_link_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip">
+                    <ImageView android:id="@+id/iv_copy_link" android:layout_width="68.0dip" android:layout_height="68.0dip" android:src="@drawable/copy_link" />
+                    <TextView android:textColor="@color/mine_textcolor" android:gravity="center" android:layout_width="wrap_content" android:layout_height="38.0dip" android:text="@string/copy_link" android:layout_below="@id/iv_copy_link" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/group_info_line" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip">
+                    <ImageView android:id="@+id/iv_group_info" android:layout_width="68.0dip" android:layout_height="68.0dip" android:src="@drawable/group_info" />
+                    <TextView android:textColor="@color/mine_textcolor" android:gravity="center" android:layout_width="wrap_content" android:layout_height="38.0dip" android:text="@string/topic_info" android:layout_below="@id/iv_group_info" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/edit_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip">
+                    <ImageView android:id="@+id/iv_edit" android:layout_width="68.0dip" android:layout_height="68.0dip" android:src="@drawable/edit" />
+                    <TextView android:textColor="@color/mine_textcolor" android:gravity="center" android:layout_width="wrap_content" android:layout_height="38.0dip" android:text="@string/edit" android:layout_below="@id/iv_edit" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/delete_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip">
+                    <ImageView android:id="@+id/iv_delete" android:layout_width="68.0dip" android:layout_height="68.0dip" android:src="@drawable/cancle" />
+                    <TextView android:textColor="@color/mine_textcolor" android:gravity="center" android:layout_width="wrap_content" android:layout_height="38.0dip" android:text="@string/mydialog_delete" android:layout_below="@id/iv_delete" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/block_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip">
+                    <ImageView android:id="@+id/iv_block" android:layout_width="68.0dip" android:layout_height="68.0dip" android:src="@drawable/block_in" android:layout_centerHorizontal="true" />
+                    <TextView android:textColor="@color/mine_textcolor" android:gravity="center" android:id="@+id/tv_block" android:layout_width="wrap_content" android:layout_height="38.0dip" android:text="@string/putinto_blocklist" android:layout_below="@id/iv_block" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/block_out_line" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip">
+                    <ImageView android:id="@+id/iv_block_out" android:layout_width="68.0dip" android:layout_height="68.0dip" android:src="@drawable/block_out" android:layout_centerHorizontal="true" />
+                    <TextView android:textColor="@color/mine_textcolor" android:gravity="center" android:id="@+id/tv_block_out" android:layout_width="wrap_content" android:layout_height="38.0dip" android:text="@string/move_out_block_list" android:layout_below="@id/iv_block_out" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/gouda_line" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip">
+                    <ImageView android:id="@+id/iv_gouda" android:layout_width="68.0dip" android:layout_height="68.0dip" android:src="@drawable/share_gouda" />
+                    <TextView android:textColor="@color/mine_textcolor" android:gravity="center" android:layout_width="wrap_content" android:layout_height="38.0dip" android:text="@string/hang_up" android:layout_below="@id/iv_gouda" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/message_line" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip">
+                    <ImageView android:id="@+id/iv_private_link" android:layout_width="68.0dip" android:layout_height="68.0dip" android:src="@drawable/private_message_share" />
+                    <TextView android:textColor="@color/mine_textcolor" android:gravity="center" android:layout_width="wrap_content" android:layout_height="38.0dip" android:text="@string/private_message" android:layout_below="@id/iv_private_link" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/report_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip">
+                    <ImageView android:id="@+id/iv_report" android:layout_width="68.0dip" android:layout_height="68.0dip" android:src="@drawable/report" />
+                    <TextView android:textColor="@color/mine_textcolor" android:gravity="center" android:layout_width="wrap_content" android:layout_height="38.0dip" android:text="@string/report_up" android:layout_below="@id/iv_report" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+        <View android:background="@color/block_line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="8.0dip" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/mine_textcolor" android:gravity="center" android:id="@+id/tv_cancle" android:background="@color/white" android:paddingTop="14.0dip" android:paddingBottom="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/mydialog_cancel" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/cancel_line" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/ll_content" />
+</RelativeLayout>

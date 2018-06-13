@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_solid_background_radius_3"
+        android:orientation="vertical">
+
+        <com.xh.study.bcy.widget.ScaleRoundedImageView
+            android:id="@+id/feed_content_img"
+            app:riv_corner_radius="3.0dip"
+            app:scale="0.563"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="0.5dip"
+            android:scaleType="centerCrop"
+            android:visibility="gone" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_solid_background_radius_3"
+            android:orientation="vertical"
+            android:paddingBottom="14.0dip"
+            android:paddingLeft="12.0dip"
+            android:paddingRight="12.0dip"
+            android:paddingTop="12.0dip">
+
+            <TextView
+                android:id="@+id/feed_title"
+                style="@style/font_16_333333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lineSpacingExtra="2.0dip"
+                android:maxLines="2"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/feed_tags"
+                style="@style/font_12_999999"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6.0dip"
+                android:ellipsize="end"
+                android:maxLines="1" />
+
+            <TextView
+                android:id="@+id/feed_summary"
+                style="@style/font_14_666666"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6.0dip"
+                android:ellipsize="end"
+                android:lineSpacingExtra="4.0dip"
+                android:maxLines="5" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.0dip">
+
+        <TextView
+            android:id="@+id/feed_twice_praise"
+            style="@style/font_12_999999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="4.0dip" />
+
+        <TextView
+            android:id="@+id/feed_name"
+            style="@style/font_12_green"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12.0dip"
+            android:layout_toLeftOf="@id/feed_twice_praise" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:scaleview="http://schemas.android.com/apk/res-auto"
+    android:id="@id/container"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_background_white"
+    android:orientation="vertical"
+    android:paddingLeft="12.0dip"
+    android:paddingRight="12.0dip"
+    android:paddingTop="16.0dip">
+
+    <TextView
+        android:id="@+id/group_new_item_title_one"
+        style="@style/font_16_333333"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lineSpacingExtra="4.0dip"
+        android:maxLines="3"
+        android:textStyle="bold" />
+
+    <com.xh.study.bcy.widget.ScaleImageView
+        android:id="@+id/img_big"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="6.0dip"
+        android:scaleType="centerCrop"
+        scaleview:scale="0.5" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_marginTop="16.0dip"
+        android:background="@color/block_line" />
+</LinearLayout>

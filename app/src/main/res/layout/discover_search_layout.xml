@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tagview="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@color/white_fafafa" android:paddingLeft="12.0dip" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0sp" android:textColor="@color/recommend_main" android:gravity="center" android:id="@+id/discover_search_cancel_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="10.0dip" android:text="@string/mydialog_cancel" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <EditText android:textColorHint="@color/four_c_black" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/discover_search_commentcontent_et" android:background="@drawable/shape_solid_e5e5e5_radius_4" android:paddingLeft="34.0dip" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="32.0dip" android:hint="@string/search_info" android:singleLine="true" android:layout_toLeftOf="@id/discover_search_cancel_tv" android:imeOptions="actionSearch" style="@style/font_13_333333" />
+        <ImageView android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/search_black" android:layout_alignLeft="@id/discover_search_commentcontent_et" android:layout_centerVertical="true" />
+        <ImageView android:id="@+id/discover_search_delete_img" android:visibility="gone" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/discover_delete_grey" android:layout_alignRight="@id/discover_search_commentcontent_et" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/block_line" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@+id/ll_main_search" android:paddingLeft="12.0dip" android:paddingTop="4.0dip" android:paddingRight="12.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@+id/history_ll" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:id="@+id/clear_history" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/clear" android:layout_alignParentRight="true" style="@style/font_13_999999" />
+                        <TextView android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/history_record" android:drawableLeft="@drawable/history_label" android:drawablePadding="6.0dip" style="@style/font_14_333333" />
+                    </RelativeLayout>
+                    <com.xh.study.bcy.widget.TagView android:orientation="horizontal" android:id="@+id/history_tag" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" tagview:t_horizontal_spacing="12.0dip" tagview:t_vertical_spacing="12.0dip" tagview:t_border_radius="2.0dip" tagview:t_border_background="@color/grey_one_level" tagview:t_text_size="12.0sp" tagview:t_line_color="@color/grey_one_level" tagview:t_text_color="@color/mine_textcolor" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/like_ll" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                    <TextView android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/look_every_one_like_work" android:drawableLeft="@drawable/love_label" android:drawablePadding="6.0dip" style="@style/font_14_333333" />
+                    <com.xh.study.bcy.widget.TagView android:id="@+id/likes_tag" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="12.0dip" tagview:t_horizontal_spacing="12.0dip" tagview:t_vertical_spacing="12.0dip" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/event_ll" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                    <TextView android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/event_is_hot" android:drawableLeft="@drawable/event_label" android:drawablePadding="6.0dip" style="@style/font_14_333333" />
+                    <com.xh.study.bcy.widget.TagView android:id="@+id/event_tag" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="12.0dip" tagview:t_horizontal_spacing="12.0dip" tagview:t_vertical_spacing="12.0dip" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/group_ll" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                    <TextView android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/every_one_search" android:drawableLeft="@drawable/love_label" android:drawablePadding="6.0dip" style="@style/font_14_333333" />
+                    <com.xh.study.bcy.widget.TagView android:id="@+id/group_tags" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="12.0dip" tagview:t_horizontal_spacing="12.0dip" tagview:t_vertical_spacing="12.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout android:orientation="vertical" android:id="@+id/search_fragment_result_container" android:background="@color/background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:orientation="vertical" android:id="@+id/search_fragment_container" android:background="@color/background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <include layout="@layout/base_progressbar_layout" />
+    </RelativeLayout>
+</LinearLayout>

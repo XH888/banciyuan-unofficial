@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:scaleimage="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:id="@+id/fl_inner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/bubble"
+                android:layout_width="90.0dip"
+                android:layout_height="45.0dip"
+                android:layout_marginLeft="46.0dip"
+                android:src="@drawable/moving_bubble" />
+
+            <ImageView
+                android:id="@+id/small_bubble"
+                android:layout_width="16.0dip"
+                android:layout_height="32.0dip"
+                android:layout_marginLeft="46.0dip"
+                android:layout_marginTop="45.0dip"
+                android:src="@drawable/small_bubble" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="110.0dip">
+
+                <ImageView
+                    android:id="@+id/pull_to_refresh_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"/>
+
+                <ProgressBar
+                    android:id="@+id/pull_to_refresh_progress"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:indeterminate="true"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/pull_to_refresh_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8.0dip"
+                    android:maxLines="1"
+                    android:textAppearance="?android:textAppearance"
+                    android:textColor="@color/grey_ten_level"
+                    android:textSize="12.0sp" />
+
+                <TextView
+                    android:id="@+id/pull_to_refresh_sub_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/grey_ten_level"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <com.xh.study.bcy.widget.ScaleImageView
+            android:id="@+id/pull_refresh_ad"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            scaleimage:scale="1.778" />
+    </FrameLayout>
+</merge>

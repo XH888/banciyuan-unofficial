@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="StickHeaderLayout">
+        <attr name="retentionHeight" format="dimension"/>
+        <attr name="scrollable" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="TagView">
+        <attr name="t_maxline" format="integer" />
+        <attr name="t_horizontal_spacing" format="dimension" />
+        <attr name="t_vertical_spacing" format="dimension" />
+        <attr name="t_border_height" format="dimension" />
+        <attr name="t_text_padding_left" format="dimension" />
+        <attr name="t_text_padding_right" format="dimension" />
+        <attr name="t_border_radius" format="dimension" />
+        <attr name="t_border_background" format="reference" />
+        <attr name="t_icon_padding_left" format="dimension" />
+        <attr name="t_icon_padding_right" format="dimension" />
+        <attr name="t_icon_width" format="dimension" />
+        <attr name="t_text_size" format="dimension" />
+        <attr name="t_line_color" format="color" />
+        <attr name="t_text_color" format="color" />
+        <attr name="t_work_line_color" format="color" />
+        <attr name="t_event_line_color" format="color" />
+        <attr name="t_work_text_color" format="color" />
+        <attr name="t_event_text_color" format="color" />
+        <attr name="t_work_label" format="reference" />
+        <attr name="t_event_label" format="reference" />
+        <attr name="t_show_icon" format="boolean" />
+        <attr name="t_keep_height" format="boolean" />
+        <attr name="t_ellipsize" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="XTabLayout">
+        <attr name="x_tabIndicatorAnimation" format="boolean"/>
+        <attr name="x_tabIndicatorColor" format="color"/>
+        <attr name="x_tabIndicatorHeight" format="dimension"/>
+        <attr name="x_tabIndicatorWidth" format="dimension"/>
+        <attr name="x_tabContentStart" format="dimension"/>
+        <attr name="x_tabBackground" format="reference"/>
+        <attr name="x_tabMode">
+            <enum name="scrollable" value="0"/>
+            <enum name="fixed" value="1"/>
+        </attr>
+        <attr name="x_tabGravity">
+            <enum name="fill" value="0"/>
+            <enum name="center" value="1"/>
+        </attr>
+        <attr name="x_tabMinWidth" format="dimension"/>
+        <attr name="x_tabMaxWidth" format="dimension"/>
+        <attr name="x_tabTextAppearance" format="reference"/>
+        <attr name="x_tabTextColor" format="color"/>
+        <attr name="x_tabSelectedTextColor" format="color"/>
+        <attr name="x_tabPaddingStart" format="dimension"/>
+        <attr name="x_tabPaddingTop" format="dimension"/>
+        <attr name="x_tabPaddingEnd" format="dimension"/>
+        <attr name="x_tabPaddingBottom" format="dimension"/>
+        <attr name="x_tabPadding" format="dimension"/>
+        <attr name="x_tabSize" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="XTabItem">
+        <attr name="android:text"/>
+        <attr name="android:icon"/>
+        <attr name="android:layout"/>
+    </declare-styleable>
+
+    <declare-styleable name="FocusButton">
+        <attr name="selectedColor" format="color" />
+        <attr name="unselectedColor" format="color" />
+        <attr name="selectText" format="string" />
+        <attr name="unselectText" format="string" />
+        <attr name="boardColor" format="color" />
+        <attr name="selecedBoardColor" format="color" />
+        <attr name="useDrawable" format="boolean" />
+        <attr name="unselectedUseLine" format="boolean" />
+        <attr name="selectedUseLine" format="boolean" />
+        <attr name="isCheck" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ScaleImageView">
+        <attr name="scale" format="float"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="ScrollHeaderLayout">
+        <attr name="fwidth" format="dimension" />
+        <attr name="fheight" format="dimension" />
+        <attr name="stable_height" format="dimension" />
+    </declare-styleable>
+
+
+    <!--<declare-styleable name="BcyTabLayout">-->
+        <!--<attr name="tab_text_selected_color" format="color" />-->
+        <!--<attr name="tab_text_color" format="color" />-->
+        <!--<attr name="tab_size" format="dimension" />-->
+        <!--<attr name="tab_indicate_width" format="dimension"/>-->
+        <!--<attr name="tab_indicate_height" format="dimension" />-->
+        <!--<attr name="tab_indicate_radius" format="dimension" />-->
+        <!--<attr name="tab_indicate_color" format="color" />-->
+        <!--<attr name="tab_padding_left" format="dimension" />-->
+        <!--<attr name="tab_padding_right" format="dimension" />-->
+    <!--</declare-styleable>-->
+
+    <attr name="ubackground" format="color" />
+    <attr name="nameColor" format="color" />
+    <attr name="cardBackGround" format="color" />
+    <attr name="blockLine" format="color" />
+    <attr name="cardInner" format="color" />
+    <attr name="contentTextColorDark" format="color" />
+    <attr name="contentTextColorLight" format="color" />
+    <attr name="discriptTextColorLight" format="color" />
+    <attr name="contentWhite" format="color" />
+    <attr name="grayText" format="color" />
+    <attr name="whiteText" format="color" />
+    <attr name="cover" format="color" />
+    <attr name="ubutton" format="color" />
+</resources>

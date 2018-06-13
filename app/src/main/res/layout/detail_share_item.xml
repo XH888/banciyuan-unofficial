@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@+id/detail_weibo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/weibo_detail" />
+    <ImageView android:id="@+id/detail_qzone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:src="@drawable/qq_zone_detail" />
+    <ImageView android:id="@+id/detail_qq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:src="@drawable/qq_detail" />
+    <ImageView android:id="@+id/detail_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:src="@drawable/more_detail" />
+</LinearLayout>

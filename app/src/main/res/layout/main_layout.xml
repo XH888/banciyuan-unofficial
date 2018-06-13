@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/main_bottom_lly"
+        android:layout_width="fill_parent"
+        android:layout_height="47.0dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/main_bottom_mainpage_tv"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:scaleType="fitCenter"
+            android:src="@drawable/main_mainpage_black" />
+
+        <ImageView
+            android:id="@+id/main_bottom_discover_tv"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:scaleType="fitCenter"
+            android:src="@drawable/main_discover_black" />
+
+        <ImageView
+            android:id="@+id/main_bottom_post"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:paddingBottom="6.0dip"
+            android:paddingTop="6.0dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/main_post" />
+
+        <ImageView
+            android:id="@+id/main_bottom_group_tv"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:scaleType="fitCenter"
+            android:src="@drawable/main_group_black" />
+
+        <ImageView
+            android:id="@+id/main_bottom_mine_tv"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:scaleType="fitCenter"
+            android:src="@drawable/main_mine_black" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_alignTop="@id/main_bottom_lly"
+        android:background="@color/line" />
+
+    <FrameLayout
+        android:id="@+id/main_content_fly"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/main_bottom_lly" />
+
+    <include
+        layout="@layout/identify_guide_layout"
+        android:visibility="gone" />
+</RelativeLayout>
