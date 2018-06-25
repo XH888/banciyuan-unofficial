@@ -84,6 +84,8 @@ public class LoginActivity extends BaseActivity<LoginMvp.View,LoginPresenter> im
         hideProgress();
         MainActivity.launch(LoginActivity.this);
         PreferencesUtil.putBoolean(this,BaseActivity.IS_LOGIN,true);
+        overridePendingTransition(R.anim.base_fade_in,  R.anim.base_fade_out);
+        finish();
     }
 
     @Override
@@ -118,7 +120,7 @@ public class LoginActivity extends BaseActivity<LoginMvp.View,LoginPresenter> im
         super.onBackPressed();
         MainActivity.launch(this);
         overridePendingTransition(R.anim.base_fade_in,  R.anim.base_fade_out);
-        LoginActivity.this.finish();
+        finish();
     }
 
 }
